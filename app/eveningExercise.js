@@ -12,7 +12,7 @@ exports.eveningExerciseAnswers = {
   },
 
   sum : function(arr) {
-    var total = 0
+    var total = 0;
     for(i in arr) {
         total+= arr[i];
     };
@@ -33,10 +33,14 @@ exports.eveningExerciseAnswers = {
   },
 
   longestSubString : function(str) {
-    var list = str.split(' ')
-    for(word in list) {
-      
-    }
+    var longest = "";
+    var list = str.split(' ');
+    for(var i = 0; i < list.length; i++) {
+      if(list[i].length>longest.length) {
+        longest = list[i];
+      };
+    };
+    return longest;
   },
 
   letterMoveForward : function(str) {
