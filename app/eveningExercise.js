@@ -48,6 +48,8 @@ exports.eveningExerciseAnswers = {
   },
 
   capitalizeWords : function(str) {
-
+    return str.replace(/\w\S*/g, function(tStr) { 
+      return tStr.charAt(0).toUpperCase() + tStr.substr(1).toLowerCase();
+    });
   }
 };
