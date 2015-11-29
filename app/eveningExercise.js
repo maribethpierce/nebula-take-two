@@ -44,11 +44,14 @@ exports.eveningExerciseAnswers = {
   },
 
   letterMoveForward : function(str) {
-
+    var characters = str.split("");
+    for(var i = 0; i < characters.length; i++) {
+      if(characters[i] regex for letter, replace it with the next letter...)
+    }
   },
 
   capitalizeWords : function(str) {
-    return str.replace(/\w\S*/g, function(tStr) { 
+    return str.replace(/\w\S*/g, function(tStr) {
       return tStr.charAt(0).toUpperCase() + tStr.substr(1).toLowerCase();
     });
   }
